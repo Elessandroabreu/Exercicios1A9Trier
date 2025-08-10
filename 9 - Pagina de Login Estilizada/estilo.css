@@ -1,0 +1,255 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+/* Container Principal do Login */
+.login-container {
+    background-color: white;
+    max-width: 400px;
+    width: 100%;
+    border-radius: 15px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+    overflow: hidden;
+}
+
+/* Cabeçalho do Login */
+.login-header {
+    background: linear-gradient(135deg, #3498db, #2980b9);
+    color: white;
+    padding: 30px;
+    text-align: center;
+}
+
+.login-header h1 {
+    font-size: 1.8rem;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+.login-header p {
+    font-size: 0.9rem;
+    opacity: 0.9;
+}
+
+/* Corpo do Login */
+.login-body {
+    padding: 30px;
+}
+
+.welcome-text {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.welcome-text h2 {
+    color: #2c3e50;
+    font-size: 1.5rem;
+    margin-bottom: 8px;
+}
+
+.welcome-text p {
+    color: #7f8c8d;
+    font-size: 0.9rem;
+}
+
+/* Formulário */
+form {
+    margin-bottom: 25px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+/* Labels */
+label {
+    display: block;
+    color: #2c3e50;
+    font-weight: 500;
+    margin-bottom: 8px;
+    font-size: 0.9rem;
+}
+
+/* Container dos Inputs */
+.input-group {
+    position: relative;
+    display: flex;
+    align-items: center;
+    background-color: #f8f9fa;
+    border: 2px solid #e9ecef;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+/* Ícones dos Inputs */
+.input-group i {
+    padding: 12px 15px;
+    color: #6c757d;
+    background-color: #e9ecef;
+    border-radius: 6px 0 0 6px;
+}
+
+/* Campos de Input */
+.form-control {
+    flex: 1;
+    padding: 12px 15px;
+    border: none;
+    background: transparent;
+    font-size: 1rem;
+    color: #495057;
+    outline: none;
+}
+
+.form-control::placeholder {
+    color: #adb5bd;
+}
+
+/* Efeitos de Focus nos Inputs */
+.input-group:focus-within {
+    border-color: #3498db;
+    box-shadow: 0 0 0 3px rgba(52, 152, 219, 0.1);
+    background-color: white;
+}
+
+.input-group:focus-within i {
+    color: #3498db;
+    background-color: rgba(52, 152, 219, 0.1);
+}
+
+/* Efeitos de Hover nos Inputs */
+.input-group:hover {
+    border-color: #ced4da;
+    background-color: white;
+}
+
+/* Mensagens de Erro */
+.error-message {
+    color: #e74c3c;
+    font-size: 0.8rem;
+    margin-top: 5px;
+    display: none;
+}
+
+/* Botão de Login */
+.btn-login {
+    width: 100%;
+    background: linear-gradient(135deg, #27ae60, #229954);
+    color: white;
+    border: none;
+    padding: 15px;
+    font-size: 1rem;
+    font-weight: 600;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 12px rgba(39, 174, 96, 0.3);
+    margin-top: 10px;
+}
+
+/* Efeito Hover no Botão */
+.btn-login:hover {
+    background: linear-gradient(135deg, #229954, #1e8449);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 16px rgba(39, 174, 96, 0.4);
+}
+
+/* Efeito Active no Botão */
+.btn-login:active {
+    transform: translateY(0);
+    box-shadow: 0 2px 8px rgba(39, 174, 96, 0.3);
+}
+
+/* Texto do Rodapé */
+.footer-text {
+    text-align: center;
+    color: #6c757d;
+    font-size: 0.8rem;
+    margin-top: 20px;
+    padding-top: 20px;
+    border-top: 1px solid #e9ecef;
+}
+
+/* Estados de Validação */
+.form-group.error .input-group {
+    border-color: #e74c3c;
+    background-color: #fdf2f2;
+}
+
+.form-group.error .error-message {
+    display: block;
+}
+
+.form-group.success .input-group {
+    border-color: #27ae60;
+    background-color: #f2f9f5;
+}
+
+/* Responsividade */
+@media (max-width: 480px) {
+    body {
+        padding: 10px;
+    }
+    
+    .login-container {
+        max-width: 100%;
+        border-radius: 10px;
+    }
+    
+    .login-header {
+        padding: 25px 20px;
+    }
+    
+    .login-header h1 {
+        font-size: 1.5rem;
+    }
+    
+    .login-body {
+        padding: 25px 20px;
+    }
+    
+    .welcome-text h2 {
+        font-size: 1.3rem;
+    }
+    
+    .form-control {
+        padding: 10px 12px;
+        font-size: 0.9rem;
+    }
+    
+    .input-group i {
+        padding: 10px 12px;
+    }
+    
+    .btn-login {
+        padding: 12px;
+        font-size: 0.9rem;
+    }
+}
+
+/* Animação de Entrada */
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.login-container {
+    animation: slideIn 0.5s ease-out;
+}

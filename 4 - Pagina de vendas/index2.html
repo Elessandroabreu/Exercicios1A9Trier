@@ -1,0 +1,81 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Exemplo de display</title>
+  <link rel="stylesheet" href="estilo copy.css">
+  <style>
+    .box {
+      padding: 10px;
+      margin: 5px;
+      background-color: lightblue;
+      border: 1px solid blue;
+    }
+
+    .block {
+      display: block;
+    }
+
+    .inline {
+      display: inline;
+    }
+
+    .inline-block {
+      background-image: url(img/);
+      display: grid;
+      width: 120px;
+      height: 50px;
+    }
+
+    .none {
+      display: none;
+    }
+
+    .flex-container {
+      display: flex;
+      gap: 10px;
+      margin-top: 10px;
+    }
+
+    .grid-container {
+      display: grid;
+      grid-template-columns: repeat(3, 100px);
+      gap: 10px;
+      margin-top: 10px;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>display: block</h2>
+  <div class="box block">Bloco 1</div>
+  <div class="box block">Bloco 2</div>
+
+  <h2>display: inline</h2>
+  <span class="box inline">Inline 1</span>
+  <span class="box inline">Inline 2</span>
+
+  <h2>display: inline-block</h2>
+  <span class="box inline-block">Inline-block 1</span>
+  <span class="box inline-block">Inline-block 2</span>
+
+  <h2>display: none</h2>
+  <div class="box none">Você não verá esse elemento</div>
+
+  <h2>display: flex</h2>
+  <div class="flex-container">
+    <div class="box">Flex 1</div>
+    <div class="box">Flex 2</div>
+    <div class="box">Flex 3</div>
+  </div>
+
+  <h2>display: grid</h2>
+  <div class="grid-container">
+    <div class="box">Grid 1</div>
+    <div class="box">Grid 2</div>
+    <div class="box">Grid 3</div>
+  </div>
+
+</body>
+</html>
